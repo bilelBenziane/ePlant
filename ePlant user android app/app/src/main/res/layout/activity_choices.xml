@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.eplant.azureeepc.eplant.Choices">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="5dp"
+
+        android:gravity="top"
+        android:id="@+id/dd"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:background="@drawable/forita">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="45dp"
+            android:layout_width="210dp"
+            android:text="Live Feeds"
+            android:gravity="center"
+            android:id="@+id/button"
+
+            android:textSize="15sp"
+
+            android:textColor="@color/total_theme"
+            android:background="@drawable/lasthope_button"
+
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:onClick="checkClickHandler"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="45dp"
+            android:layout_width="210dp"
+            android:text="Report a problem"
+            android:gravity="center"
+            android:id="@+id/button1"
+
+            android:textColor="@color/total_theme"
+            android:background="@drawable/lasthope_button"
+
+            android:textSize="15sp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:onClick="consultClickHandler"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="45dp"
+            android:layout_width="210dp"
+            android:text="Engineer Feedback"
+            android:gravity="center"
+            android:id="@+id/button2"
+
+            android:textColor="@color/total_theme"
+            android:background="@drawable/lasthope_button"
+            android:textSize="15sp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:onClick="planClickHandler"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

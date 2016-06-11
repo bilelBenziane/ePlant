@@ -1,0 +1,86 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--this is the starting page when i select what to do Background="{StaticResource gasBrush}" -->
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <!---->
+        <!--__________________________________Header________________________________-->
+        <Grid Grid.Row="0" Background="{StaticResource TotalThem}" Height="80"   >
+            <StackPanel>
+                <TextBlock  x:Name="to" TextAlignment="Left" VerticalAlignment="Center"
+                            Padding="0,10,0,0" HorizontalAlignment="Left"
+                       Margin="17,6,0,0"  Height="40" Text="E-Plant"
+                       FontWeight="Bold" FontSize="32"/>
+            </StackPanel>
+        </Grid>
+        <!--Background="{StaticResource center_color}"-->
+        <Grid Grid.Row="1"  Margin="0,2,0,-2">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/forita.jpg"
+                    Stretch="UniformToFill" />
+            </Grid.Background>
+
+            <StackPanel>
+              <Image Source="Assets/logo1.png" Height="200" Width="200" Margin="0,30,0,0" />
+           
+              <TextBlock Width="300" Text="Welcome Back" FontSize="20" Margin="0,20,0,20" 
+                         Foreground="{StaticResource TotalThem}" 
+                         TextAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" Height="50" Margin="0,2,0,0">
+                    <TextBlock Width="180" Text="Username:" FontSize="20" 
+                         TextWrapping="Wrap"
+                         HorizontalAlignment="Left" Padding="53,20,0,0"
+                         Foreground="{StaticResource TotalThem}" 
+                         TextAlignment="Center"/>
+
+                  <TextBox Width="180" Foreground="{StaticResource TotalThem}" 
+                           Text="0698300131"  Padding="0,5,10,0" TextAlignment="right"
+                           Background="Transparent"
+                            BorderBrush="Transparent" />
+                </StackPanel>
+                <Border BorderBrush="{StaticResource TotalThem}" BorderThickness="1"
+                        Width="320"/>
+                <StackPanel Orientation="Horizontal" Height="50">
+                    <TextBlock Width="180" Text="Pasword:" FontSize="20" 
+                         TextWrapping="Wrap" TextAlignment="Left"
+                         HorizontalAlignment="Left" Padding="75,20,0,0"
+                         Foreground="{StaticResource TotalThem}"/>
+
+                    <TextBox Width="180" Foreground="{StaticResource TotalThem}" 
+                           Text="1980" Background="Transparent" Padding="0,3,15,0"
+                             TextAlignment="Right" BorderBrush="Transparent"/>
+                </StackPanel>
+
+
+                <Border BorderBrush="{StaticResource TotalThem}"
+                        BorderThickness="1"  Width="320"/>
+      
+            <Button x:ConnectionId='1' HorizontalAlignment="Center" Margin="0,50,0,0" Content="Submit"
+                    BorderBrush="{StaticResource TotalThem}"  
+                    Template="{StaticResource ButtonControlTemplate1}"
+                    Foreground="{StaticResource TotalThem}" 
+                    Width="200" FontSize="22" Height="70"                       />
+            
+            
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+</Page>
+

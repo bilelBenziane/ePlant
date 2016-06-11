@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header">#ff3333</color>
+    <color name="Totalos">#536dfe</color>
+    <color name="above_header">#c8e6c9</color>
+    <color name="text_header">#fefefe</color>
+
+    <color name="blanco">#000000</color>
+    <color name="main_text">#ffffff</color>
+    <color name="total_theme">#388e3c</color>
+</resources>

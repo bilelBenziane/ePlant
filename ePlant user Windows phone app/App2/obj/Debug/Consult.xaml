@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="App2.Consult"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar" Background="{StaticResource TotalThem}" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:ConnectionId='1'  x:Name="Main" IsCompact="False" Icon="BackToWindow"
+                              Label="Main Menu"                     />
+
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="{StaticResource TotalThem}" Height="80"   >
+            <StackPanel>
+                <TextBlock  x:Name="to" TextAlignment="Left" VerticalAlignment="Center"
+                            Padding="0,10,0,0" HorizontalAlignment="Left"
+                       Margin="17,6,0,0"  Height="60" Text="Consult an engineer"
+                       FontWeight="Bold" FontSize="32"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/forita.jpg"
+                    Stretch="UniformToFill" />
+            </Grid.Background>
+
+            <StackPanel Width="auto">
+             <TextBlock Foreground="{StaticResource TotalThem}" FontSize="18" Height="50"
+                        HorizontalAlignment="Center" TextAlignment="Left" Width="380"
+                        Padding="0,10,0,0"
+                        Text="Write the problem you are having here:"/>
+          <Border BorderThickness="1" BorderBrush="{StaticResource TotalThem}" 
+                  Margin="8,-19,0,8" Width="380" Height="1"/>
+                
+            <TextBox Width="380" Margin="0,2,0,0" Height="320" 
+                     Foreground="{StaticResource TotalThem}" Opacity="0.7"
+                         x:Name="description"  />
+            
+         
+          <TextBlock x:ConnectionId='2' Foreground="{StaticResource TotalThem}" FontSize="18" Height="50"
+                        HorizontalAlignment="Center" TextAlignment="Left" Width="380"
+                        Padding="0,10,0,0"
+                        Text="If you want to send photos too, press here."                                               Margin="10,0"/>
+                <Border BorderThickness="1" BorderBrush="{StaticResource TotalThem}" 
+                  Margin="8,-15,0,8" Height="1" Width="380"  HorizontalAlignment="Center"/>
+
+       <Button x:ConnectionId='3' HorizontalAlignment="Center" Margin="0,8,0,0" Content="Submit"
+                    BorderBrush="{StaticResource TotalThem}"  
+                    Template="{StaticResource ButtonControlTemplate1}"
+                    Foreground="{StaticResource TotalThem}" 
+                    Width="200" FontSize="22" Height="70"                     />
+
+
+            </StackPanel>
+        </Grid>
+
+
+    </Grid>
+</Page>
+

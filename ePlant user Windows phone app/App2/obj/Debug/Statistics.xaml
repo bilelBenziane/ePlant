@@ -1,0 +1,131 @@
+﻿<Page
+    x:Class="App2.Statistics"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar" Background="{StaticResource TotalThem}" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:ConnectionId='1'  x:Name="Main" IsCompact="False" Icon="BackToWindow"
+                              Label="Main Menu"                    />
+
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="{StaticResource TotalThem}" Height="80"   >
+            <StackPanel>
+                <TextBlock  x:Name="to" TextAlignment="Left" 
+                            VerticalAlignment="Center"
+                            Padding="0,0,0,0" 
+                            HorizontalAlignment="Left"
+                       Margin="17,6,0,0"   
+                            Text="Live Feeds"
+                       FontWeight="Bold" FontSize="32"/>
+            </StackPanel>
+        </Grid>
+        <Grid  Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/forita.jpg"
+                    Stretch="UniformToFill" />
+            </Grid.Background>
+           
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Width="340" 
+                            Margin="0,110,0,0">
+                    <TextBlock Height="50" Text="Temperature :" FontSize="19"
+                               Width="200"
+                               Foreground="{StaticResource TotalThem}" 
+                               Padding="5,10,0,0" HorizontalAlignment="Left"/>
+                    <TextBlock Height="50" FontSize="19" Text="t" 
+                               x:Name="temp"
+                               TextAlignment="Right" Width="90"
+                               Foreground="{StaticResource TotalThem}"
+                               Padding="5,10,0,0" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <Border BorderBrush="{StaticResource TotalThem}" Width="380"
+                        Margin="8,0,8,0" BorderThickness="1"/>
+
+
+                <StackPanel Orientation="Horizontal" Width="340" 
+                            Margin="0,20,0,0">
+                    <TextBlock Height="50" Text="Gas :" FontSize="19"
+                               Width="200"
+                               Foreground="{StaticResource TotalThem}" 
+                               Padding="5,10,0,0" HorizontalAlignment="Left"/>
+                    <TextBlock Height="50" FontSize="19" Text="g" 
+                               x:Name="gas"
+                               TextAlignment="Right" Width="90"
+                               Foreground="{StaticResource TotalThem}"
+                               Padding="5,10,0,0" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <Border BorderBrush="{StaticResource TotalThem}" Width="380"
+                        Margin="8,0,8,0" BorderThickness="1"/>
+
+                <StackPanel Orientation="Horizontal" Width="340" 
+                            Margin="0,20,0,0">
+                    <TextBlock Height="50" Text="Light :" FontSize="19"
+                               Width="200"
+                               Foreground="{StaticResource TotalThem}" 
+                               Padding="5,10,0,0" HorizontalAlignment="Left"/>
+                    <TextBlock Height="50" FontSize="19" Text="l" 
+                               x:Name="light"
+                               TextAlignment="Right" Width="90"
+                               Foreground="{StaticResource TotalThem}"
+                               Padding="5,10,0,0" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <Border BorderBrush="{StaticResource TotalThem}" Width="380"
+                        Margin="8,0,8,0" BorderThickness="1"/>
+
+                <StackPanel Orientation="Horizontal" Width="340" 
+                            Margin="0,20,0,0">
+                    <TextBlock Height="50" Text="Humidity :" FontSize="19"
+                               Width="200"
+                               Foreground="{StaticResource TotalThem}" 
+                               Padding="5,10,0,0" HorizontalAlignment="Left"/>
+                    <TextBlock Height="50" FontSize="19" Text="h" 
+                               x:Name="humidity"
+                               TextAlignment="Right" Width="90"
+                               Foreground="{StaticResource TotalThem}"
+                               Padding="5,10,0,0" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <Border BorderBrush="{StaticResource TotalThem}" Width="380"
+                        Margin="8,0,8,0" BorderThickness="1"/>
+                <StackPanel Orientation="Horizontal" Width="340" 
+                            Margin="0,20,0,0">
+                    <TextBlock Height="50" Text="Water :" FontSize="19"
+                               Width="200"
+                               Foreground="{StaticResource TotalThem}" 
+                               Padding="5,10,0,0" HorizontalAlignment="Left"/>
+                    <TextBlock Height="50" FontSize="19" Text="w" 
+                               x:Name="water"
+                               TextAlignment="Right" Width="90"
+                               Foreground="{StaticResource TotalThem}"
+                               Padding="5,10,0,0" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <Border BorderBrush="{StaticResource TotalThem}" Width="380"
+                        Margin="8,0,8,0" BorderThickness="1"/>
+
+
+
+            </StackPanel>
+            
+        
+        </Grid>
+
+
+    </Grid>
+
+</Page>
+

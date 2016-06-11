@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="App2.graph"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar" Background="{StaticResource TotalThem}" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton  x:Name="Main" IsCompact="False" Icon="BackToWindow"
+                              Label="Main Menu" Click="Main_Click" />
+
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="{StaticResource TotalThem}" Height="80"   >
+            <StackPanel>
+                <TextBlock  x:Name="to" TextAlignment="Left" VerticalAlignment="Center"
+                            Padding="0,10,0,0" HorizontalAlignment="Left"
+                       Margin="17,6,0,0"  Height="40" Text="Statistics"
+                       FontWeight="Bold" FontSize="32"/>
+            </StackPanel>
+        </Grid>
+        <Grid  Grid.Row="1" Background="#888888">
+            <StackPanel>
+                <Charting:Chart x:Name="LineChart" HorizontalAlignment="Center" 
+                                VerticalAlignment="Top" Margin="0,0,0,0"
+                                Width="400" 
+                                Height="450" >
+                    <Charting:LineSeries Title="Gas" FontSize="15" Margin="5"
+                                         IndependentValuePath="id" x:Name="grapher" 
+                                         DependentValuePath="gas" 
+                                         Foreground="red"
+                                         IsSelectionEnabled="True"
+                                         Background="Gray"/>
+                    <Charting:LineSeries Title="Temp" FontSize="15" Margin="5"
+                                         IndependentValuePath="id" x:Name="grapher1" 
+                                         DependentValuePath="temp" 
+                                         Foreground="red"
+                                         IsSelectionEnabled="True"
+                                         Background="Gray"/>
+                    <Charting:LineSeries Title="Light" FontSize="15" Margin="5"
+                                         IndependentValuePath="id" x:Name="grapher2" 
+                                         DependentValuePath="light" 
+                                         Foreground="red"
+                                         IsSelectionEnabled="True"
+                                         Background="Gray"/>
+                    <Charting:LineSeries Title="Water" FontSize="15" Margin="5"
+                                         IndependentValuePath="id" x:Name="grapher3" 
+                                         DependentValuePath="water" 
+                                         Foreground="red"
+                                         IsSelectionEnabled="True"
+                                         Background="Gray"/>
+                    <Charting:LineSeries Title="Humidity" FontSize="15" Margin="5"
+                                         IndependentValuePath="id" x:Name="grapher4" 
+                                         DependentValuePath="humidity" 
+                                         Foreground="red"
+                                         IsSelectionEnabled="True"
+                                         Background="Gray"/>
+                </Charting:Chart>
+                
+                
+            </StackPanel>
+
+        </Grid>
+
+
+    </Grid>
+</Page>

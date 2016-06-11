@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">E-Plant</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_choices">Main menu</string>
+    <string name="title_activity_check_characteristics">Live Feeds</string>
+    <string name="title_activity_consult">Fill in the form</string>
+    <string name="title_activity_plans">Engineer Feedback</string>
+</resources>

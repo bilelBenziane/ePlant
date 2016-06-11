@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <item name="android:colorPrimary"> @color/total_theme</item>
+        <item name="android:colorPrimaryDark"> @color/above_header</item>
+        <item name="android:textColorPrimary"> @color/text_header</item>
+        <item name="android:navigationBarColor"> @color/Totalos</item>
+
+    </style>
+
+</resources>
